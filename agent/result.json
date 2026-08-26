@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "task_id": "r09c08-general-visual-check",
+  "status": "awaiting_codex",
+  "updated_at": "2026-08-26",
+  "message": "Codex should replace this file with the completed result for the current task."
+}
