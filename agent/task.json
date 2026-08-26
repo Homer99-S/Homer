@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "pending",
+  "task_id": "r09c08-general-visual-check",
+  "created_at": "2026-08-26",
+  "project": "PoE2 Top20 item recognition",
+  "instructions": [
+    "Investigate only slot r09c08 first.",
+    "Identify whether a general visual confirmation rule can correct it.",
+    "Do not add any slot-specific, item-specific, coordinate-specific, or ground-truth special case.",
+    "Test any proposed general rule against the full offline baseline.",
+    "Do not accept a change that reduces the current safe baseline of 103/143 correct slots.",
+    "If no general rule is found, leave the baseline unchanged and report that result.",
+    "After completing r09c08, prepare the next investigation block for the remaining normal charm errors."
+  ],
+  "expected_result": {
+    "write_to": "agent/result.json",
+    "include": [
+      "task_id",
+      "status",
+      "baseline_before",
+      "baseline_after",
+      "r09c08_before",
+      "r09c08_after",
+      "general_rule_changed",
+      "files_changed",
+      "tests_run",
+      "regressions",
+      "notes"
+    ]
+  }
+}
