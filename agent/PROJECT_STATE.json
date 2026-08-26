@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "project": "PoE2 Top20 item recognition",
+  "baseline": {
+    "correct_slots": 103,
+    "total_slots": 143,
+    "remaining_errors": 40
+  },
+  "current_focus": "r09c08",
+  "next_focus": "normal_charms",
+  "notes": [
+    "Preserve the safe 103/143 baseline unless a general visual rule improves it.",
+    "Do not add slot-specific, item-specific, or ground-truth special cases.",
+    "After r09c08, continue with the remaining normal charm errors."
+  ],
+  "exchange": {
+    "task_file": "agent/task.json",
+    "result_file": "agent/result.json",
+    "branch": "main"
+  }
+}
